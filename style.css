@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Freight display pro;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(https://wallpapercave.com/wp/wp8474764.jpg);
+    padding: 10px;
+}
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    background: #ffa1a164;
+    backdrop-filter:blur(2px);
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-app h2 {
+    color: #002765;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 200%;
+}
+
+.todo-app h2 img {
+    margin-left: 11px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f0edef;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+select{
+    position: relative;
+    top: -93px;
+    right: -290px;
+    color: #830ca0;
+    font-size: 110%;
+    border: none;
+    border-radius: 11px;
+    width: 10rem;
+    height: 3.2rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    padding-right: 1.5rem;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 19px ;
+    background: #a245ffc0;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-left: -40px;
+}
+
+button:hover{
+    background:#406dc7c9 ;
+}
+
+ul li {
+    list-style: none;
+    font-size: 20px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    color: #002765;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(https://www.freeiconspng.com/uploads/circle-empty-image-icon-png-1.png);
+    background-size: 100%;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(https://messengernews.fb.com/wp-content/uploads/2018/08/checked-checkbox.png);
+    background-size: 128%;
+}
+
+ul li span{
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #000000;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #00000032;
+}
+
+ul li span:hover {
+    background: #edeef0;
+    color: black;
+    text-shadow: #2a2a2a 0 0 9px;
+}
